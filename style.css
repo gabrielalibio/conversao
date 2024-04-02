@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: f1;
+    src: url(fontes/fortuner/FortunerHeavyPersonalUse.otf);
+}
+
+@font-face {
+    font-family: f2;
+    src: url(fontes/zt_gatha/ZTGatha-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: f3;
+    src: url();
+}
+
+body{
+    text-align: center;
+    font-size: 35px;
+    background-color: #d4ee5e;
+}
+
+button{
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 10px 15px black;
+}
+
+h1{
+    color: #778013;
+    font-family: f1;
+}
+
+label{
+    font-family: f2;
+}
+
+footer{
+    font-size: 25px;
+    color:#778013;
+    font-family: f1;
+}
+
+p{
+    font-family: f2;
+}
+
+script{
+    box-shadow: 5px 10px 15px black;
+}
+
+input{
+    border-radius: 7px;
+    box-shadow: 5px 10px 15px black;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 1200px
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.toggle-btn:checked+.toggle-label {
+    background-color: violet;
+}
+
+.toggle-btn:checked+.toggle-label:before {
+    background-color: white;
+    transform: translateX(30px);
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.dark-mode{
+    background-color: #006854;
+}
+
+.dark-mode h1{
+    color:black;
+    font-family: f1;
+}
+
+.dark-mode p{
+    color: #8dc4bb;
+    font-family: f2;
+}
+
+.dark-mode label{
+color: #8dc4bb;
+}
+
+.dark-mode footer{
+    color: #d8ffff;
+}
